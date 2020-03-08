@@ -13,13 +13,13 @@ class StartWorkoutWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DashBoardBaseWidget(
-        child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-          Text(Strings.startWorkoutWidgetTitle, style: RepStyles.warningRedBold()),
-          Icon(Icons.arrow_forward_ios)
-        ]
-      ),
+      child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Text(Strings.startWorkoutWidgetTitle,
+                style: RepStyles.warningRedBold()),
+            Icon(Icons.arrow_forward_ios)
+          ]),
       onTap: onTap,
     );
   }

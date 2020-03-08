@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:rep/general/rep_colors.dart';
 
 class DashBoardBaseWidget extends StatelessWidget {
   final Widget child;
@@ -19,7 +20,7 @@ class DashBoardBaseWidget extends StatelessWidget {
             padding: EdgeInsets.all(14),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              color: Colors.white.withAlpha(35) 
+              color: RepColors.whiteGlass
             ),
             child: child,
           ),

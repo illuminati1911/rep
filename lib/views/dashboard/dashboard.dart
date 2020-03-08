@@ -5,6 +5,7 @@ import 'package:rep/general/rep_colors.dart';
 import 'package:rep/general/rep_styles.dart';
 import 'package:rep/models/home_state.dart';
 import 'package:rep/views/dashboard/start_workout_widget.dart';
+import 'package:rep/views/global/circle_progress_bar/circle_progress_bar.dart';
 import 'package:rep/views/global/rep_appbar.dart';
 
 class DashBoard extends StatelessWidget {
@@ -26,6 +27,18 @@ class DashBoard extends StatelessWidget {
               onTap: () {
                 print("TODO: Start new workout");
               },
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 30),
+              height: 250,
+              child: CircleProgressBar(
+                foregroundColor: RepColors.textCyan,
+                backgroundColor: RepColors.whiteGlass,
+                value: 0.62,
+                child: Text("430 kcal",
+                  style: RepStyles.warningRedBold().copyWith(fontSize: 35)
+                ),
+              ),
             )
           ],
         )
